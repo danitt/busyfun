@@ -1,4 +1,5 @@
 import * as Busylight from 'busylight';
+import * as Rainbow from 'color-rainbow';
 
 // IIFE
 (async (): Promise<void> => {
@@ -11,7 +12,9 @@ import * as Busylight from 'busylight';
   // busylight.pulse();
 
   // ..colour cycle
-  busylight.blink(['red', 'orange', 'yellow', 'green', '#c0ffee', 'indigo', 'violet'], 2000);
+  const colours = Rainbow.create(1000);
+  const coloursHex: string[] = colours.map((c: any): string => c.hexString());
+  busylight.blink(coloursHex, 20);
 
   // process.exit();
 })();
