@@ -9,6 +9,7 @@
     "build": "tsc",
     "cycle": "./busyfun",
     "lint": "eslint src/**",
+    "bin": "nexe dist/index.js --output dist/busyfun",
     "test": "jest --watchAll"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "eslint-plugin-prettier": "3.1.0",
     "jest": "24.8.0",
     "prettier": "1.18.2",
+    "tinygradient": "^1.0.0",
     "ts-jest": "24.0.2",
     "ts-node": "8.3.0",
     "typescript": "3.5.2"
