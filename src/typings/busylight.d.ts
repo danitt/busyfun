@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/class-name-casing */
+
 declare module 'busylight' {
   export function devices(findUnsupported: boolean): device[];
   export function get(options?: options): Busylight;
